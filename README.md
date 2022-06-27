@@ -2,6 +2,7 @@
 
 ## Angular 
 
+### convert Image to Base64
 ````
 blobToBase64(blobData: Blob): Promise < Base64 > {
     return new Promise((resolve, reject) => {
@@ -17,6 +18,7 @@ blobToBase64(blobData: Blob): Promise < Base64 > {
     });
 }
 
+// expemple: assetImagePath = '/assets/images/cv-doc-header.png'; or http url
 async imageToBase64(assetImagePath): Promise < Base64 > {
     return this.http.get(assetImagePath, { responseType: 'blob' }).pipe(
         map(async (blobData: Blob) => {
