@@ -3,7 +3,7 @@
 ## Angular 
 
 ### convert Image to Base64
-````
+```ts
 blobToBase64(blobData: Blob): Promise < Base64 > {
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
@@ -26,4 +26,4 @@ async imageToBase64(assetImagePath): Promise < Base64 > {
         })
     ).toPromise();
 }
-````
+```
